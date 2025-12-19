@@ -35,24 +35,23 @@ specific date to maintain consistency and accountability.
 
 ## Repository Structure
 
+```text
 BRIDGELABZ-TRAINING
-│
 ├── core-java-practice
-│ ├── gcr-codebase
-│ │ ├── programming-elements
-│ │ ├── control-flow
-│ │ ├── arrays
-│ │
-│ ├── leet-code-codebase
-│ │ └── LeetCode problem solutions
-│ │
-│ ├── scenario-based
-│ │ └── Scenario-based and logical problems
-│ │
-│ └── README.md
+│   ├── gcr-codebase
+│   │   ├── programming-elements
+│   │   ├── control-flow
+│   │   └── arrays
+│   │
+│   ├── leet-code-codebase
+│   │   └── LeetCode problem solutions
+│   │
+│   ├── scenario-based
+│   │   └── Scenario-based and logical problems
+│   │
+│   └── README.md
 │
 └── .git
-
 ---
 
 ## Status
