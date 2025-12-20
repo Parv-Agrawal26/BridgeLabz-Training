@@ -22,6 +22,9 @@ specific date to maintain consistency and accountability.
 - **19 December 2025**  
   Completed **Level 1, Level 2, and Level 3 assessments** of **Control Flow**.
 
+- **20 December 2025**  
+  Completed **Level 1, Level 2 assessments** of **Arrays**.
+
 ---
 
 ## Objective
