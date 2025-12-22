@@ -25,6 +25,8 @@ specific date to maintain consistency and accountability.
 - **20 December 2025**  
   Completed **Level 1, Level 2 assessments** of **Arrays**.
 
+- **22 December 2025**  
+  Completed **Level 1, Level 2, Level 3 assessments** of **Strings**.
 ---
 
 ## Objective
