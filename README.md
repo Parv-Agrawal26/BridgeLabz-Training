@@ -30,6 +30,9 @@ specific date to maintain consistency and accountability.
   
 - **23 December 2025**  
   Added some  **Scenerio based** questions.
+
+- **24 December 2025**  
+  Completed **Level 1, Level 2, Level 3 assessments** of **Java functions**.
 ---
 
 ## Objective
