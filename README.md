@@ -33,6 +33,9 @@ specific date to maintain consistency and accountability.
 
 - **24 December 2025**  
   Completed **Level 1, Level 2, Level 3 assessments** of **Java functions**.
+  
+- **25 December 2025**  
+  Completed **extra** questions of **Strings**.
 ---
 
 ## Objective
