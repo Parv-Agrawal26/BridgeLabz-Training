@@ -36,6 +36,9 @@ specific date to maintain consistency and accountability.
   
 - **25 December 2025**  
   Completed **extra** questions of **Strings**.
+
+- **26 December 2025**  
+  Added some  **Scenerio based** questions.
 ---
 
 ## Objective
