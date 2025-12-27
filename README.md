@@ -39,6 +39,9 @@ specific date to maintain consistency and accountability.
 
 - **26 December 2025**  
   Added some  **Scenerio based** questions.
+  
+- **27 December 2025**  
+  Completed **extra** questions of **Functions**.
 ---
 
 ## Objective
