@@ -5,7 +5,7 @@ class FitnessTracker{
         int[] pushUps=new int[7];
         for(int i=0;i<7;i++){
             System.out.println("Enter push ups for today: ");
-            pushUps[day]=scn.nextInt();
+            pushUps[i]=scn.nextInt();
         }
         int total=0;
         int count=0;
