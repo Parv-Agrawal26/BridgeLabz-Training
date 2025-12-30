@@ -42,6 +42,12 @@ specific date to maintain consistency and accountability.
   
 - **27 December 2025**  
   Completed **extra** questions of **Functions**.
+    
+- **29 December 2025**  
+  Added some  **Scenerio based** questions.
+    
+- **27 December 2025**  
+  Solved **Lime comparision and snake and ladder** questions.
 ---
 
 ## Objective
