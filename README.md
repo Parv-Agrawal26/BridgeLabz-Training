@@ -47,7 +47,7 @@ specific date to maintain consistency and accountability.
   Added some  **Scenerio based** questions.
     
 - **30 December 2025**  
-  Solved **Lime comparision and snake and ladder** questions.
+  Solved **Line comparision and snake and ladder, Level 1 and Level 2 ** questions of object and classes.
 ---
 
 ## Objective
