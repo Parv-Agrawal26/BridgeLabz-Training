@@ -46,7 +46,7 @@ specific date to maintain consistency and accountability.
 - **29 December 2025**  
   Added some  **Scenerio based** questions.
     
-- **27 December 2025**  
+- **30 December 2025**  
   Solved **Lime comparision and snake and ladder** questions.
 ---
 
