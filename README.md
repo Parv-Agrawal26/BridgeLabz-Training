@@ -48,6 +48,9 @@ specific date to maintain consistency and accountability.
     
 - **30 December 2025**  
   Solved **Line comparision and snake and ladder, Level 1 and Level 2 ** questions of object and classes.
+      
+- **31 December 2025**  
+  Solved questions of **constructors and instance**.
 ---
 
 ## Objective
