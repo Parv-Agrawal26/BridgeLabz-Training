@@ -1,7 +1,7 @@
-# BridgeLabz-Training
+xc # BridgeLabz-Training
 # Core Java Practice – Daily Progress Log
 
-This repository documents my daily progress while practicing Core Java concepts,
+This repository documents my daily progress while practicing Core Java concepts,OOPs,
 problem-solving, and assessments. Each entry records the work completed on a
 specific date to maintain consistency and accountability.
 
@@ -56,34 +56,35 @@ specific date to maintain consistency and accountability.
   Solved questions of **java keywords**.
 ---
 
-## Objective
-
-- Strengthen Core Java fundamentals  
-- Improve logical thinking and problem-solving skills  
-- Maintain a consistent daily coding habit  
-- Prepare for interviews and assessments
-
 ---
 
 ## Repository Structure
 
 ```text
-BRIDGELABZ-TRAINING
-├── core-java-practice
-│   ├── gcr-codebase
-│   │   ├── programming-elements
-│   │   ├── control-flow
-│   │   └── arrays
-│   │
-│   ├── leet-code-codebase
-│   │   └── LeetCode problem solutions
-│   │
-│   ├── scenario-based
-│   │   └── Scenario-based and logical problems
-│   │
-│   └── README.md
+BridgeLabz-Training/
 │
-└── .git
+├── core-java-practice/
+│   │
+│   ├── gcr-codebase/
+│   │   ├── programming-elements/
+│   │   └── control-flow/
+│   │
+│   ├── leet-code-codebase/
+│   │
+│   └── scenario-based/
+│
+├── oops-practice/
+│   │
+│   ├── gcr-codebase/
+│   │   ├── inheritance/
+│   │   ├── encapsulation/
+│   │   └── polymorphism/
+│   │
+│   ├── scenario-based/
+│   │
+│   └── leet-code-codebase/
+│
+├── reviews/
 ---
 
 ## Status
