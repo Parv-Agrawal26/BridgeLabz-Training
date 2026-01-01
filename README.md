@@ -51,6 +51,9 @@ specific date to maintain consistency and accountability.
       
 - **31 December 2025**  
   Solved questions of **constructors and instance**.
+        
+- **01 January 2025**  
+  Solved questions of **java keywords**.
 ---
 
 ## Objective
