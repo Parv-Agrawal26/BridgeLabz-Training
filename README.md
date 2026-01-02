@@ -1,4 +1,4 @@
-xc # BridgeLabz-Training
+# BridgeLabz-Training
 # Core Java Practice – Daily Progress Log
 
 This repository documents my daily progress while practicing Core Java concepts,OOPs,
@@ -54,6 +54,9 @@ specific date to maintain consistency and accountability.
         
 - **01 January 2025**  
   Solved questions of **java keywords**.
+          
+- **02 January 2025**  
+  Solved questions of **object and class diagrams**.
 ---
 
 ---
