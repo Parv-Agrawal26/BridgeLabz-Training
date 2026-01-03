@@ -57,6 +57,9 @@ specific date to maintain consistency and accountability.
           
 - **02 January 2025**  
   Solved questions of **object and class diagrams**.
+            
+- **03   January 2025**
+  Solved questions of **inheritance**.
 ---
 
 ---
