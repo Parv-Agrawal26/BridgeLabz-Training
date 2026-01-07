@@ -1,137 +1,152 @@
-import java.util.*;
+public class OnlineBankingSystem {
 
-class InsufficientBalanceException extends Exception {
-    InsufficientBalanceException(String message) {
-        super(message);
+    public static void main(String[] args) {
+
+        User u1 = new User("Rohan");
+        User u2 = new User("Sohan");
+
+        Account a1 = new SavingsAccount("101", 5000);
+        Account a2 = new CurrentAccount("102", 3000);
+
+        BankService bank = new SimpleBankService();
+
+        bank.createAccount(u1, a1);
+        bank.createAccount(u2, a2);
+
+        Thread t1 = new Thread(() -> {
+            try {
+                bank.transferFunds(u1, a1, a2, 2000);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        });
+
+        Thread t2 = new Thread(() -> {
+            try {
+                bank.transferFunds(u2, a1, a2, 3000);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        });
+
+        t1.start();
+        t2.start();
+
+        try {
+            t1.join();
+            t2.join();
+        } catch (Exception ignored) {
+        }
+
+        bank.checkBalance(u1, a1);
+        bank.checkBalance(u2, a2);
+
+        System.out.println("\nInterest Calculations:");
+        System.out.println("Savings Interest = " + a1.calculateInterest());
+        System.out.println("Current Interest = " + a2.calculateInterest());
     }
 }
 
-interface BankService {
-    void deposit(double amount);
+class User {
+    String name;
 
-    void withdraw(double amount) throws InsufficientBalanceException;
-
-    double calculateInterest();
+    User(String name) {
+        this.name = name;
+    }
 }
 
-abstract class Account implements BankService {
-    protected String accountNumber;
-    protected double balance;
-    protected List<String> transactionHistory = new ArrayList<>();
+abstract class Account {
+    String accountNum;
+    int balance;
+    String user;
 
-    Account(String accountNumber, double balance) {
-        this.accountNumber = accountNumber;
+    Account(String accountNum, int balance) {
+        this.accountNum = accountNum;
         this.balance = balance;
-        transactionHistory.add("Account created with balance " + balance);
     }
 
-    public synchronized void deposit(double amount) {
-        balance += amount;
-        transactionHistory.add("Deposited " + amount);
-    }
-
-    public synchronized void withdraw(double amount) throws InsufficientBalanceException {
-        if (amount > balance) {
-            throw new InsufficientBalanceException("Insufficient balance");
-        }
-        balance -= amount;
-        transactionHistory.add("Withdrawn " + amount);
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public void showTransactions() {
-        for (String record : transactionHistory) {
-            System.out.println(record);
-        }
-    }
+    abstract double calculateInterest();
 }
 
 class SavingsAccount extends Account {
 
-    SavingsAccount(String accountNumber, double balance) {
-        super(accountNumber, balance);
+    SavingsAccount(String accountNum, int balance) {
+        super(accountNum, balance);
     }
 
-    public double calculateInterest() {
+    double calculateInterest() {
         return balance * 0.04;
     }
 }
 
 class CurrentAccount extends Account {
 
-    CurrentAccount(String accountNumber, double balance) {
-        super(accountNumber, balance);
+    CurrentAccount(String accountNum, int balance) {
+        super(accountNum, balance);
     }
 
-    public double calculateInterest() {
+    double calculateInterest() {
         return balance * 0.02;
     }
 }
 
-class TransferTask extends Thread {
-    Account fromAccount;
-    Account toAccount;
-    double amount;
+class InsufficientBalanceException extends Exception {
 
-    TransferTask(Account fromAccount, Account toAccount, double amount) {
-        this.fromAccount = fromAccount;
-        this.toAccount = toAccount;
-        this.amount = amount;
-    }
-
-    public void run() {
-        synchronized (fromAccount) {
-            synchronized (toAccount) {
-                try {
-                    fromAccount.withdraw(amount);
-                    toAccount.deposit(amount);
-                    System.out.println("Transfer of " + amount + " completed");
-                } catch (Exception exception) {
-                    System.out.println(exception.getMessage());
-                }
-            }
-        }
+    InsufficientBalanceException(String message) {
+        super(message);
     }
 }
 
-public class OnlineBankingSystem {
+interface BankService {
+    void createAccount(User user, Account account);
 
-    public static void main(String[] args) {
+    void checkBalance(User user, Account account);
 
-        Account savings = new SavingsAccount("SA101", 5000);
-        Account current = new CurrentAccount("CA201", 3000);
+    void transferFunds(User user,
+            Account fromAccount,
+            Account toAccount,
+            int amount)
+            throws InsufficientBalanceException;
+}
 
-        System.out.println("Initial Balance:");
-        System.out.println("Savings: " + savings.getBalance());
-        System.out.println("Current: " + current.getBalance());
+class SimpleBankService implements BankService {
 
-        Thread transaction1 = new TransferTask(savings, current, 1000);
-        Thread transaction2 = new TransferTask(current, savings, 500);
+    public void createAccount(User user, Account account) {
+        account.user = user.name;
+        System.out.println("Account created for " + user.name +
+                " | A/C: " + account.accountNum +
+                " | Balance: " + account.balance);
+    }
 
-        transaction1.start();
-        transaction2.start();
+    public void checkBalance(User user, Account account) {
+        System.out.println("Balance for " + user.name +
+                " | A/C: " + account.accountNum +
+                " = " + account.balance);
+    }
 
-        try {
-            transaction1.join();
-            transaction2.join();
-        } catch (Exception exception) {
-            System.out.println(exception.getMessage());
+    public synchronized void transferFunds(User user,
+            Account from,
+            Account to,
+            int amount)
+            throws InsufficientBalanceException {
+
+        if (from.balance < amount) {
+            throw new InsufficientBalanceException(
+                    "Transaction failed! Not enough balance in " + from.accountNum);
         }
 
-        System.out.println("\nFinal Balance:");
-        System.out.println("Savings: " + savings.getBalance());
-        System.out.println("Current: " + current.getBalance());
+        System.out.println(user.name + " initiating transfer of " + amount);
 
-        System.out.println("\nSavings Interest: " + savings.calculateInterest());
-        System.out.println("Current Interest: " + current.calculateInterest());
+        try {
+            Thread.sleep(1000);
+        } catch (Exception ignored) {
+        }
 
-        System.out.println("\nSavings Transaction History:");
-        savings.showTransactions();
+        from.balance -= amount;
+        to.balance += amount;
 
-        System.out.println("\nCurrent Transaction History:");
-        current.showTransactions();
+        System.out.println("Transferred " + amount +
+                " from " + from.accountNum +
+                " to " + to.accountNum);
     }
 }
