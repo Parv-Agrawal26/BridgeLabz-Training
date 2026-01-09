@@ -66,6 +66,15 @@ specific date to maintain consistency and accountability.
             
 - **06 January 2025**  
   Added some  **Scenerio based** questions.
+
+- **07 January 2025**  
+  Completed **questions** of **Linked List**.
+
+- **08 January 2025**  
+  Solved some  **Scenerio based** questions of OOPs.
+  
+- **09 January 2025**  
+  Solved some  **Scenerio based** questions of OOPs.
 ---
 
 
