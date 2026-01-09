@@ -104,6 +104,16 @@ BridgeLabz-Training/
 │   │
 │   └── leet-code-codebase/
 │
+│
+├── dsa-practice/
+│   │
+│   ├── gcr-codebase/
+│   │   ├── linked-list/
+│   │
+│   ├── scenario-based/
+│   │
+│   └── leet-code-codebase/
+│
 ├── reviews/
 ```
 ---
