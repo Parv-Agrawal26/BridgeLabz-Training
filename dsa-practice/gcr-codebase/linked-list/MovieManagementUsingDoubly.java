@@ -95,17 +95,16 @@ class LinkedList{
             return;
         }
         Node current = head;
-        int inx = 1;
-        while(inx < pos && current != null){
+        for(int i=0; i<pos-1; i++){
+            if(current.next == null){
+                break;
+            }
             current = current.next;
-            inx++;
         }
-        Node temp = current.next;
-        current.next = newNode;
+        newNode.next = current.next;
         newNode.prev = current;
-        newNode.next = temp;
-        if(temp != null){
-            temp.prev = newNode;
+        if(current.next != null){
+            current.next.prev = newNode;
         } else {
             tail = newNode;
         }

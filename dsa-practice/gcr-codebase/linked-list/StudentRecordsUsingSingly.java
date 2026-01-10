@@ -64,14 +64,20 @@ class LinkedList {
     void addAtPos(StudentRecord data, int pos) {
         Node newNode = new Node(data);
         Node current = head;
-        int inx = 1;
-        while (inx < pos) {
-            current = current.next;
-            inx++;
+        if (pos == 0) {
+            newNode.next = head;
+            head = newNode;
+            System.out.println("Date record added at position " + pos);
+            return;
         }
-        Node temp = current.next;
+        for (int i = 0; i < pos - 1; i++) {
+            if (current.next == null) {
+                break;
+            }
+            current = current.next;
+        }
+        newNode.next = current.next;
         current.next = newNode;
-        newNode.next = temp;
         System.out.println("Date record added at position " + pos);
     }
 

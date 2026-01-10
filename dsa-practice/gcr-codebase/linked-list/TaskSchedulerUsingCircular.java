@@ -1,5 +1,4 @@
 
-
 public class TaskSchedulerUsingCircular {
     public static void main(String[] args) {
         LinkedList taskList = new LinkedList();
@@ -25,13 +24,16 @@ public class TaskSchedulerUsingCircular {
         taskList.displayTasks();
     }
 }
+
 class Node {
     Task data;
     Node next;
+    Node prev;
 
     Node(Task data) {
         this.data = data;
         this.next = null;
+        this.prev = null;
     }
 }
 
@@ -56,13 +58,15 @@ class LinkedList {
     void addTaskFirst(Task data) {
         Node newNode = new Node(data);
         if (head == null) {
-            head = newNode;
-            tail = newNode;
-            newNode.next = head;
+            head = tail = newNode;
+            head.next = head;
+            head.prev = head;
         } else {
             newNode.next = head;
+            newNode.prev = tail;
+            head.prev = newNode;
+            tail.next = newNode;
             head = newNode;
-            tail.next = head;
         }
         System.out.println("Task added at first");
     }
@@ -70,15 +74,16 @@ class LinkedList {
     void addTaskLast(Task data) {
         Node newNode = new Node(data);
         if (head == null) {
-            head = newNode;
-            tail = newNode;
-            newNode.next = head;
+            addTaskFirst(data);
         } else {
             tail.next = newNode;
+            newNode.next = head;
+            newNode.prev = tail;
+            head.prev = newNode;
             tail = newNode;
-            tail.next = head;
+            System.out.println("Task added at last");
         }
-        System.out.println("Task added at last");
+
     }
 
     void addTaskAtPos(Task data, int pos) {
@@ -88,17 +93,19 @@ class LinkedList {
             return;
         }
         Node current = head;
-        int index = 1;
-        while (index < pos && current.next != head) {
+        for (int i = 0; i < pos - 1; i++) {
             current = current.next;
-            index++;
+        }
+        if (current == tail) {
+            addTaskLast(data);
+            return;
         }
         newNode.next = current.next;
+        newNode.prev = current;
+        current.next.prev = newNode;
         current.next = newNode;
-        if (current == tail) {
-            tail = newNode;
-        }
         System.out.println("Task added at position " + pos);
+
     }
 
     void displayTasks() {
@@ -108,7 +115,7 @@ class LinkedList {
         }
         Node current = head;
         do {
-            System.out.println("Task ID: " + current.data.id + ", Name: " + current.data.name + ", Priority: "
+            System.out.println("ID: " + current.data.id + ", Name: " + current.data.name + ", Priority: "
                     + current.data.priority + ", Due Date: " + current.data.dueDate);
             current = current.next;
         } while (current != head);
@@ -120,24 +127,28 @@ class LinkedList {
             return;
         }
         Node current = head;
-        Node previous = tail;
         do {
             if (current.data.id == id) {
-                if (current == head) {
+                if (head == tail) {
+                    head = tail = null;
+                } else if (current == head) {
                     head = head.next;
+                    head.prev = tail;
                     tail.next = head;
+                } else if (current == tail) {
+                    tail = tail.prev;
+                    tail.next = head;
+                    head.prev = tail;
                 } else {
-                    previous.next = current.next;
-                    if (current == tail) {
-                        tail = previous;
-                    }
+                    current.prev.next = current.next;
+                    current.next.prev = current.prev;
                 }
                 System.out.println("Task with ID " + id + " deleted.");
                 return;
             }
-            previous = current;
             current = current.next;
         } while (current != head);
+
         System.out.println("Task with ID " + id + " not found.");
     }
 
@@ -149,8 +160,9 @@ class LinkedList {
         Node current = head;
         while (current != head) {
             if (current.data.priority.equals(priority)) {
-                System.out.println("Task Found: ID: " + current.data.id + ", Name: " + current.data.name + ", Priority: "
-                        + current.data.priority + ", Due Date: " + current.data.dueDate);
+                System.out
+                        .println("Task Found: ID: " + current.data.id + ", Name: " + current.data.name + ", Priority: "
+                                + current.data.priority + ", Due Date: " + current.data.dueDate);
                 return;
             }
             current = current.next;
