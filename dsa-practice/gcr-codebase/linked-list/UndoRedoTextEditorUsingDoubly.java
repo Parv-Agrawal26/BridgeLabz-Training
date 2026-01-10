@@ -1,157 +1,98 @@
-public class UndoRedoTextEditorUsingDoubly {
-    public static void main(String[] args) {
-        TextHistory history = new TextHistory(10);
+public class UndoRedoTextEditorUsingDoubly{
+    TextState head;
+    TextState tail;
+    TextState current;
+    int size;
+    final int max=10;
+    
+    void addState(String newText) {
 
-        history.addState("Hello");
-        history.addState("Hello World");
-        history.addState("Hello World!\nThis is a text editor.");
-
-        System.out.println("Current state:");
-        System.out.println(history.getCurrent());
-
-        System.out.println("\nUndo:");
-        history.undo();
-        System.out.println(history.getCurrent());
-
-        System.out.println("\nUndo:");
-        history.undo();
-        System.out.println(history.getCurrent());
-
-        System.out.println("\nRedo:");
-        history.redo();
-        System.out.println(history.getCurrent());
-
-        System.out.println("\nAdd new state after undo (clears redo history):");
-        history.addState("Hello Universe");
-        System.out.println(history.getCurrent());
-
-        System.out.println("\nRedo (should not be possible):");
-        history.redo();
-        System.out.println(history.getCurrent());
-
-        System.out.println("\nAdding many states to show history limit (10):");
-        for (int i = 1; i <= 12; i++) {
-            history.addState("State " + i);
+        if (current != null && current != tail) {
+            TextState temp = current.next;
+            current.next = null;
+            tail = current;
+            while (temp != null) {
+                size--;
+                temp = temp.next;
+            }
         }
-        System.out.println("Current state:");
-        System.out.println(history.getCurrent());
+        TextState newState = new TextState(newText);
+
+        if (head == null) {
+            head = tail = current = newState;
+            size = 1;
+            return;
+        }
+
+        tail.next = newState;
+        newState.prev = tail;
+        tail = current = newState;
+        size++;
+
+        if (size > max) {
+            head = head.next;
+            head.prev = null;
+            size--;
+        }
     }
 
-    static final class TextHistory {
-        private static final class Node {
-            String text;
-            Node prev;
-            Node next;
-
-            Node(String text) {
-                this.text = text;
-            }
-        }
-
-        private final int maxSize;
-        private int size;
-        private Node head;
-        private Node tail;
-        private Node current;
-
-        TextHistory(int maxSize) {
-            if (maxSize <= 0) {
-                throw new IllegalArgumentException("maxSize must be positive");
-            }
-            this.maxSize = maxSize;
-        }
-
-        void addState(String text) {
-            if (text == null) {
-                text = "";
-            }
-
-            if (current != null && current.next != null) {
-                Node toDelete = current.next;
-                current.next = null;
-                tail = current;
-
-                while (toDelete != null) {
-                    Node next = toDelete.next;
-                    toDelete.prev = null;
-                    toDelete.next = null;
-                    toDelete = next;
-                    size--;
-                }
-            }
-
-            Node newNode = new Node(text);
-            if (head == null) {
-                head = newNode;
-                tail = newNode;
-                current = newNode;
-                size = 1;
-            } else {
-                tail.next = newNode;
-                newNode.prev = tail;
-                tail = newNode;
-                current = newNode;
-                size++;
-            }
-
-            trimToMax();
-            System.out.println("New state added");
-        }
-
-        boolean undo() {
-            if (current == null) {
-                System.out.println("No states.");
-                return false;
-            }
-            if (current.prev == null) {
-                System.out.println("Cannot undo.");
-                return false;
-            }
+    void undo() {
+        if (current != null && current.prev != null) {
             current = current.prev;
-            System.out.println("Undo successful");
-            return true;
+            System.out.println("Undo: " + current.text);
+        } else {
+            System.out.println("No more undos available.");
         }
+    }
 
-        boolean redo() {
-            if (current == null) {
-                System.out.println("No states.");
-                return false;
-            }
-            if (current.next == null) {
-                System.out.println("Cannot redo.");
-                return false;
-            }
+    void redo() {
+        if (current != null && current.next != null) {
             current = current.next;
-            System.out.println("Redo successful");
-            return true;
+            System.out.println("Redo: " + current.text);
+        } else {
+            System.out.println("No more redos available.");
         }
+    }
 
-        String getCurrent() {
-            if (current == null) {
-                return "";
-            }
-            return current.text;
+    void displayCurrentState() {
+        if (current != null) {
+            System.out.println("Current Text: " + current.text);
+        } else {
+            System.out.println("No text available.");
         }
+    }
 
-        private void trimToMax() {
-            while (size > maxSize) {
-                if (head == null) {
-                    break;
-                }
-                Node oldHead = head;
-                head = head.next;
-                if (head != null) {
-                    head.prev = null;
-                } else {
-                    tail = null;
-                }
-                if (current == oldHead) {
-                    current = head;
-                }
-                oldHead.next = null;
-                oldHead.prev = null;
-                size--;
-            }
-        }
+    public static void main(String[] args) {
+        UndoRedoTextEditorUsingDoubly editor = new UndoRedoTextEditorUsingDoubly();
+        editor.addState("Hello");
+        editor.addState("Hello, World");
+        editor.addState("Hello, World!");
+        editor.displayCurrentState();
+
+        editor.undo();
+        editor.displayCurrentState();
+
+        editor.undo();
+        editor.displayCurrentState();
+
+        editor.redo();
+        editor.displayCurrentState();
+
+        editor.addState("Hello, Universe!");
+        editor.displayCurrentState();
+
+        editor.redo();
+    }
+}
+
+class TextState{
+    String text;
+    TextState prev;
+    TextState next;
+
+    public TextState(String text){
+        this.text = text;
+        this.prev = null;
+        this.next = null;
     }
 }
