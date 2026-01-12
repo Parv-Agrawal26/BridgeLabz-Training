@@ -44,6 +44,7 @@ This repo is meant to be **readable, scalable**.
 * **07 Jan** – Linked List (DSA)
 * **08 Jan** – Scenario-based OOP problems
 * **09 Jan** – Scenario-based OOP problems
+* **12 Jan** – Scenario-based OOP problems
 
 ---
 
