@@ -47,6 +47,7 @@ This repo is meant to be **readable, scalable**.
 * **12 Jan** – Scenario-based OOP problems
 * **13 Jan** – Scenario-based OOP problems
 * **14 Jan** – Stack, Queue, HashMap (DSA)
+* **15 Jan** – Sorting Algorithms based questions
 
 ---
 
@@ -79,6 +80,8 @@ BridgeLabz-Training/
 ├── dsa-practice/
 │   ├── gcr-codebase/
 │   │   └── linked-list/
+│   │   ├── sorting-algorithms/
+│   │   ├── stack-queue-hashmap/
 │   ├── scenario-based/
 │   └── leet-code-codebase/
 │
