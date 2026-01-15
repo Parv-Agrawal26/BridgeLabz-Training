@@ -45,6 +45,8 @@ This repo is meant to be **readable, scalable**.
 * **08 Jan** – Scenario-based OOP problems
 * **09 Jan** – Scenario-based OOP problems
 * **12 Jan** – Scenario-based OOP problems
+* **13 Jan** – Scenario-based OOP problems
+* **14 Jan** – Stack, Queue, HashMap (DSA)
 
 ---
 
