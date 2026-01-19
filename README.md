@@ -49,6 +49,8 @@ This repo is meant to be **readable, scalable**.
 * **14 Jan** – Stack, Queue, HashMap (DSA)
 * **15 Jan** – Sorting Algorithms based questions
 * **16 Jan** – More Sorting Algorithms based questions
+* **17 Jan** – Linear search, binary search, scenario based problems
+* **19 Jan** – Address book problem, scenario based problems
 
 ---
 
