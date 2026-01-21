@@ -54,7 +54,6 @@ class Storage<T extends WarehouseItem> {
         Storage<Electronics> electronicsStore = new Storage<>();
         electronicsStore.addItem(new Electronics("Laptop"));
         electronicsStore.addItem(new Electronics("Mobile"));
-
         Storage<Groceries> groceryStore = new Storage<>();
         groceryStore.addItem(new Groceries("Rice"));
         groceryStore.addItem(new Groceries("Oil"));
