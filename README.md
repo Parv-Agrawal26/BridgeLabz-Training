@@ -51,7 +51,8 @@ This repo is meant to be **readable, scalable**.
 * **16 Jan** – More Sorting Algorithms based questions
 * **17 Jan** – Linear search, binary search, scenario based problems
 * **19 Jan** – Address book problem, scenario based problems
-* **20 Jan** – Algorithm analysis problems, scenario based problems
+* **20 Jan** – Algorithm analysis problems, scenario based problems 
+* **21 Jan** – Problems based on generics in collection-practice
 
 ---
 
