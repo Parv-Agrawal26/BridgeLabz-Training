@@ -36,7 +36,7 @@ This repo is meant to be **readable, scalable**.
 
 ### January 2025
 
-* **01 Jan** – Java keywords (`this`, `static`, `final`, `instanceof`)
+* **01 Jan** – Java keywords problems
 * **02 Jan** – Object Modeling & Class Diagrams
 * **03 Jan** – Inheritance
 * **05 Jan** – Encapsulation, Polymorphism, Abstraction
@@ -53,7 +53,17 @@ This repo is meant to be **readable, scalable**.
 * **19 Jan** – Address book problem, scenario based problems
 * **20 Jan** – Algorithm analysis problems, scenario based problems 
 * **21 Jan** – Problems based on generics in collection-practice
+* **23 Jan** – All Collections framework problems
+* **26 Jan** – Streams API problems
+* **27 Jan** – Exception handling problems
+* **28 Jan** – Collection-based scenario problems
+* **30 Jan** – Regex problems & project refactoring
+* **31 Jan** – JUnit testing problems  
+* **31 Jan** – Flip Key & Lexical Twist scenario problems
 
+### February 2025
+
+* **01 Feb** – Annotation-based problems, Reflection-based problems, Future logistics scenario-based OOP problem
 ---
 
 ## Repository Structure
@@ -84,21 +94,28 @@ BridgeLabz-Training/
 │
 ├── dsa-practice/
 │   ├── gcr-codebase/
-│   │   └── linked-list/
+│   │   ├── linked-list/
 │   │   ├── sorting-algorithms/
 │   │   ├── stack-queue-hashmap/
 │   │   ├── time-complexity-analysis/
-│   │   ├── linear-binary-search/
+│   │   └── linear-binary-search/
 │   ├── scenario-based/
 │   └── leet-code-codebase/
 │
 ├── collection-practice/
 │   ├── gcr-codebase/
-│   │   └── generics/
-│   ├── scenario-based/
-│   └── leet-code-codebase/
+│   │   ├── annotations/
+│   │   ├── exceptions/
+│   │   ├── generics/
+│   │   ├── junit/
+│   │   ├── list-set-queue-map/
+│   │   ├── reflection/
+│   │   ├── regex/
+│   │   └── streams/
+│   └── scenario-based/
 │
 └── reviews/
+
 ```
 
 ---
@@ -108,6 +125,19 @@ BridgeLabz-Training/
 * Navigate by **topic**, not by date
 * Each folder contains **self-contained Java files**
 * Scenario-based folders focus on **real-world logic**
+
+---
+
+## 🛠️ Technologies Used
+
+- Java
+- Collections Framework
+- DSA
+- OOP Concepts
+- Streams API
+- Regex
+- JUnit
+- Git & GitHub
 
 ---
 
