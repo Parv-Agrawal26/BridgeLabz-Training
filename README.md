@@ -64,6 +64,7 @@ This repo is meant to be **readable, scalable**.
 ### February 2025
 
 * **01 Feb** – Annotation-based problems, Reflection-based problems, Future logistics scenario-based OOP problem
+* **02 Feb** – CSV file handling problems
 ---
 
 ## Repository Structure
