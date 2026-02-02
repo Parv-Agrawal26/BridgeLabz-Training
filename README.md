@@ -17,54 +17,123 @@ This repo is meant to be **readable, scalable**.
 
 ## Daily Progress Log
 
-### December 2025
+## 🔹 December 2025  
+### (core-java-practice branch)
 
-* **16 Dec** – Repository initialized. Created `core-java-practice` branch
-* **17 Dec** – Solved 10 problems from GCR codebase
-* **18 Dec** – Programming Elements (Level 1 & 2)
-* **19 Dec** – Control Flow (Level 1, 2 & 3)
-* **20 Dec** – Arrays (Level 1 & 2)
-* **22 Dec** – Strings (Level 1, 2 & 3)
-* **23 Dec** – Scenario-based problems
-* **24 Dec** – Java Methods / Functions (Level 1, 2 & 3)
-* **25 Dec** – Extra String problems
-* **26 Dec** – Scenario-based problems
-* **27 Dec** – Extra Function problems
-* **29 Dec** – Scenario-based problems
-* **30 Dec** – OOP: Line Comparison, Snake & Ladder (Objects & Classes – L1 & L2)
-* **31 Dec** – Constructors & Instance concepts
+**16 Dec – Repository Initialized**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/core-java-practice
 
-### January 2025
+**18 Dec – Programming Elements (Level 1 & 2)**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/programming-elements
 
-* **01 Jan** – Java keywords problems
-* **02 Jan** – Object Modeling & Class Diagrams
-* **03 Jan** – Inheritance
-* **05 Jan** – Encapsulation, Polymorphism, Abstraction
-* **06 Jan** – Scenario-based OOP problems
-* **07 Jan** – Linked List (DSA)
-* **08 Jan** – Scenario-based OOP problems
-* **09 Jan** – Scenario-based OOP problems
-* **12 Jan** – Scenario-based OOP problems
-* **13 Jan** – Scenario-based OOP problems
-* **14 Jan** – Stack, Queue, HashMap (DSA)
-* **15 Jan** – Sorting Algorithms based questions
-* **16 Jan** – More Sorting Algorithms based questions
-* **17 Jan** – Linear search, binary search, scenario based problems
-* **19 Jan** – Address book problem, scenario based problems
-* **20 Jan** – Algorithm analysis problems, scenario based problems 
-* **21 Jan** – Problems based on generics in collection-practice
-* **23 Jan** – All Collections framework problems
-* **26 Jan** – Streams API problems
-* **27 Jan** – Exception handling problems
-* **28 Jan** – Collection-based scenario problems
-* **30 Jan** – Regex problems & project refactoring
-* **31 Jan** – JUnit testing problems  
-* **31 Jan** – Flip Key & Lexical Twist scenario problems
+**19 Dec – Control Flow (Level 1, 2 & 3)**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/control-flow
 
-### February 2025
+**20 Dec – Arrays (Level 1 & 2)**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/arrays
 
-* **01 Feb** – Annotation-based problems, Reflection-based problems, Future logistics scenario-based OOP problem
-* **02 Feb** – CSV file handling problems
+**22 Dec – Strings (Level 1, 2 & 3)**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/strings
+
+**24 Dec – Java Methods / Functions**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods
+
+**25–27 Dec – Extra Strings & Functions**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase
+
+**29 Dec – Scenario-Based Problems**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenario-based
+
+**30 Dec – Objects & Classes (Level 1 & 2)**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/class-object
+
+**31 Dec – Constructors & Instance**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/constructors
+
+---
+
+## 🔹 January 2026  
+
+### 🧠 OOP  
+*(oops-practice branch)*
+
+**01 Jan – Java Keywords**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/core-java-practice/core-java-practice/java-keywords
+
+**02 Jan – Object Modeling & Class Diagrams**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/class-object
+
+**03 Jan – Inheritance**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/inheritance
+
+**05 Jan – Encapsulation, Polymorphism & Abstraction**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase
+
+**06–13 Jan – OOP Scenario-Based Problems**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based
+
+---
+
+### 🧩 Data Structures & Algorithms  
+*(dsa-practice branch)*
+
+**07 Jan – Linked List**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linked-list
+
+**14 Jan – Stack, Queue & HashMap**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/stack-queue-hashmap
+
+**15–16 Jan – Sorting Algorithms**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms
+
+**17 Jan – Linear & Binary Search**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linear-binary-search
+
+**20 Jan – Time Complexity Analysis**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/time-complexity-analysis
+
+---
+
+### 📚 Collections  
+*(collection-practice branch)*
+
+**21 Jan – Generics**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/generics
+
+**23 Jan – Collections Framework**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/list-set-queue-map
+
+**26 Jan – Streams API**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/streams
+
+**27 Jan – Exception Handling**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/exceptions
+
+**28 Jan – Collection-Based Scenarios**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based
+
+**30 Jan – Regex**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/regex
+
+**31 Jan – JUnit**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/junit
+
+---
+
+## 🔹 February 2026
+
+**01 Feb – Annotations**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/annotations
+
+**01 Feb – Reflection**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/reflection
+
+**01 Feb – Future Logistics Scenario**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based
+
+**02 Feb – CSV File Handling**  
+🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/io-programming/io-programming
+
 ---
 
 ## Repository Structure
