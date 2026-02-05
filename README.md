@@ -136,6 +136,15 @@ This repo is meant to be **readable, scalable**.
 * **02 Feb** – CSV File Handling problems  
   🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/io-programming/io-programming
 
+* **03 Feb** – JSON data handling problems 
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/io-programming/io-programming/gcr-codebase/json-data-handling
+
+* **04 Feb** – Lambda expression problems
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/java8-features/java8-features/gcr-codebase/lambda-expressions
+
+* **05 Feb** – Aero vigil scenario based problem
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/AeroVigil
+
 
 ---
 
@@ -187,6 +196,16 @@ BridgeLabz-Training/
 │   │   └── streams/
 │   └── scenario-based/
 │
+├── io-programming/
+│   └──  gcr-codebase/
+│       ├── csv-data-handling/
+│       └──  json-data-handling/
+|
+├── java8-features/
+│   ├── gcr-codebase/
+│   │   ├── lambda-expressions/
+│   │   └── streams/
+│   └── scenario-based/
 └── reviews/
 
 ```
