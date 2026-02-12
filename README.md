@@ -136,14 +136,35 @@ This repo is meant to be **readable, scalable**.
 * **02 Feb** – CSV File Handling problems  
   🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/io-programming/io-programming
 
-* **03 Feb** – JSON data handling problems 
+* **03 Feb** – JSON data handling problems  
   🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/io-programming/io-programming/gcr-codebase/json-data-handling
 
-* **04 Feb** – Lambda expression problems
+* **04 Feb** – Lambda expression problems  
   🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/java8-features/java8-features/gcr-codebase/lambda-expressions
 
-* **05 Feb** – Aero vigil scenario based problem
+* **05 Feb** – Aero vigil scenario based problem  
   🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/AeroVigil
+
+* **06 Feb** – Functional Interface problems  
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/java8-features/java8-features/gcr-codebase/functional-interface
+
+* **07 Feb** – Stream API & Collector problems  
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/java8-features/java8-features/gcr-codebase/stream-api
+
+* **07 Feb** – Ocean Fleet scenario based problem  
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/solution-designing
+
+* **08 Feb** – Library Management solution designing problem  
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/solution-designing/solution-designing/gcr-codebase/library-management
+
+* **08 Feb** – Java Multithreading programs  
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/multi-threading/multi-threading/gcr-codebase/JavaMultiThreading
+
+* **09 Feb** – Health Clinic App problem (JDBC & DBMS)  
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/tree/jdbc-dbms/jdbc-dbms/gcr-codebase/HealthClinicApp
+
+* **09 Feb** – Added JUnit test case scenario problem  
+  🔗 https://github.com/Parv-Agrawal26/BridgeLabz-Training/blob/collections-practice/collections-practice/scenario-based/UnitTest.java
 
 
 ---
@@ -206,6 +227,19 @@ BridgeLabz-Training/
 │   │   ├── lambda-expressions/
 │   │   └── streams/
 │   └── scenario-based/
+|
+├── multi-threading/
+│   ├── gcr-codebase/
+|   └── scenario-based/
+│
+├── jdbc-dbms/
+│   ├── gcr-codebase/
+|   └── scenario-based/
+│
+├── solution-designing/
+│   ├── gcr-codebase/
+|   └── scenario-based/
+|
 └── reviews/
 
 ```
