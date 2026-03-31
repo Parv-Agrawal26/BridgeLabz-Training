@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class ShortLongWord{
+    static int len(String s){
+        int count=0;
+        while(true){
+            try{s.charAt(count);count++;}
+            catch(Exception e){break;}
+        }
+        return c;
+    }
+    static String[] splitMan(String t){
+        int wc=1;
+        for(int i=0;i<t.length();i++){
+            if(t.charAt(i)==' ') wc++;
+        }
+        String[] w=new String[wc];
+        int id=0;
+        String cur="";
+        for(int i=0;i<t.length();i++){
+            if(t.charAt(i)==' '){
+                w[id]=cur;
+                id++;
+                cur="";
+            }else cur+=t.charAt(i);
+        }
+        w[id]=cur;
+        return w;
+    }
+    public static void main(String[] args){
+        Scanner scn=new Scanner(System.in);
+        String text=scn.nextLine();
+        String[] w=splitMan(text);
+        String small=w[0], big=w[0];
+        for(int i=1;i<w.length;i++){
+            if(len(w[i])<len(small)) small=w[i];
+            if(len(w[i])>len(big)) big=w[i];
+        }
+        System.out.println("Small word "+small);
+        System.out.println("Big word "+big);
+    }
+}
